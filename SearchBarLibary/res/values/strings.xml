@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hint_searchbar">输入进行检索</string>
+	<string name="btn_searchbar_cancel">取消</string>
+</resources>
+
