@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lwz.searchbar.demo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <com.lwz.widget.searchbar.SearchBarView 
+
+    <com.lwz.widget.searchbar.SearchBarView
+        android:id="@+id/searchbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        
-    </com.lwz.widget.searchbar.SearchBarView>
+        android:layout_height="wrap_content"
+        android:background="#DDD" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/bank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <com.lwz.letterbarview.lib.LetterBarView
+            android:id="@+id/letterbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lbLetterBarBackground="@drawable/bg_letterbar"
+            app:lbLetterBarTextColor="@color/letterbar_text_selector"
+            app:lbOverlayBackground="@drawable/bg_overlay"
+            app:lbOverlayTextColor="#FFF"
+            app:lbOverlayTextSize="60sp" />
+
+        <include
+            layout="@layout/widget_part_searchbar_result"
+            android:visibility="invisible" />
+    </FrameLayout>
 
 </LinearLayout>

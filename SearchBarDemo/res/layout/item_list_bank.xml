@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <ImageView 
+        android:id="@+id/bank_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:maxWidth="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@null"/>
+    
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:text="上海农商银行" >
+    </TextView>
+
+</LinearLayout>
